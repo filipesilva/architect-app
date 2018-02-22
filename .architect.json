@@ -1,11 +1,11 @@
 {
   "$schema": "./node_modules/@angular-devkit/architect/src/workspace-schema.json",
-  "name": "pet-finder",
+  "name": "architect-demo",
   "version": 1,
-  "defaultProject": "myApp",
+  "defaultProject": "demo",
   "root": "./",
   "projects": {
-    "myApp": {
+    "demo": {
       "root": "./projects/architect-demo",
       "projectType": "application",
       "defaultTarget": "browser",
@@ -26,21 +26,21 @@
             }
           }
         },
-        "devServer": {
+        "dev-server": {
           "builder": "@angular-devkit/build-webpack:devServer",
           "options": {
-            "browserTarget": "myApp:browser"
+            "browserTarget": "demo:browser"
           },
           "configurations": {
             "production": {
-              "browserTarget": "myApp:browser:production"
+              "browserTarget": "demo:browser:production"
             }
           }
         },
-        "extractI18n": {
+        "extract-i18n": {
           "builder": "@angular-devkit/build-webpack:extractI18n",
           "options": {
-            "browserTarget": "myApp:browser"
+            "browserTarget": "demo:browser"
           }
         },
         "karma": {
@@ -71,7 +71,7 @@
           "builder": "@angular-devkit/build-webpack:protractor",
           "options": {
             "protractorConfig": "protractor.conf.js",
-            "devServerTarget": "myApp:devServer"
+            "devServerTarget": "demo:dev-server"
           }
         }
       }
