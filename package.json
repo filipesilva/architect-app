@@ -8,7 +8,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/core": "file:../../work/devkit/dist/@angular-devkit_core.tgz",
+    "@angular-devkit/core": "0.4.2",
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
@@ -23,9 +23,9 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "file:../../work/devkit/dist/@angular-devkit_architect.tgz",
-    "@angular-devkit/architect-cli": "file:../../work/devkit/dist/@angular-devkit_architect-cli.tgz",
-    "@angular-devkit/build-webpack": "file:../../work/devkit/dist/@angular-devkit_build-webpack.tgz",
+    "@angular-devkit/architect": "0.0.2",
+    "@angular-devkit/architect-cli": "0.0.2",
+    "@angular-devkit/build-webpack": "0.0.2",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.3",
